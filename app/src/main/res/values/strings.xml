@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="btn_previous">Previous</string>
+    <string name="btn_next">Next</string>
+    <string name="pic_halloween">Halloween Picture</string>
+    <string name="artist_halloween">Jim Chito, (2023)</string>
+</resources>
