@@ -25,6 +25,11 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
@@ -62,17 +67,20 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ArtApp(modifier: Modifier = Modifier) {
+    var currentArt by remember { mutableIntStateOf(1) }
+
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Bottom,
         modifier = Modifier
             .fillMaxSize()
     ) {
+
         Surface(
             modifier = modifier
                 .padding(16.dp)
                 .border(BorderStroke(width = 2.dp, color = MaterialTheme.colorScheme.onBackground))
-                .shadow(elevation = 4.dp, shape = RectangleShape, clip = false),
+                .shadow(elevation = 8.dp, shape = RectangleShape, clip = false),
             color = MaterialTheme.colorScheme.background,
 
         ) {
@@ -100,7 +108,7 @@ fun ArtApp(modifier: Modifier = Modifier) {
             )
             val textBig = stringResource(id = R.string.artist_halloween)
             val index1 = textBig.indexOf(",")
-            val substring1 = textBig.substring(0, index1)
+            val substring1 = textBig.substring(0, index1+1)
             val long: Int = textBig.length
             val substring2 = textBig.substring(index1+1, long)
             Text(
@@ -155,6 +163,13 @@ fun ArtApp(modifier: Modifier = Modifier) {
         }
 
     }
+
+}
+
+@Composable
+fun textArt(
+
+){
 
 }
 

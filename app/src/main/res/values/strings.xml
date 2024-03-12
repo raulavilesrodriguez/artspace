@@ -3,5 +3,15 @@
     <string name="btn_previous">Previous</string>
     <string name="btn_next">Next</string>
     <string name="pic_halloween">Halloween Picture</string>
+    <string name="desc_halloween">Halloween Picture by Jim Chito</string>
     <string name="artist_halloween">Jim Chito, (2023)</string>
+    <string name="pic_woman">Woman AI Picture</string>
+    <string name="desc_woman">Woman AI Picture, by AI</string>
+    <string name="artist_woman">AI ChapGPT, (2024)</string>
+    <string name="pic_christmas">Christmas Picture</string>
+    <string name="desc_christmas">Christmas Picture, enjoy the season</string>
+    <string name="artist_christmas">Fabián Rodríguez, (2012)</string>
+    <string name="pic_flowers">Flowers Picture</string>
+    <string name="desc_flowers">Flowers in Pujilí Ecuador</string>
+    <string name="artist_flowers">Raúl Avilés, (2024)</string>
 </resources>
